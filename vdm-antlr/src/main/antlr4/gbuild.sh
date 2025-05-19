@@ -2,37 +2,26 @@
 
 # delete previous builds
 echo 'Removing out generated grammars'
-#rm -R ./.antlr/output
+rm -R ./.antlr/output
 
-	# alias antlr4='java -Xmx500M -cp /usr/local/lib/antlr4-4.11.1-complete.jar:$CLASSPATH org.antlr.v4.Tool' 
-	# alias grun='java -Xmx500M -cp /usr/local/lib/antlr4-4.11.1-complete.jar:$CLASSPATH org.antlr.v4.gui.TestRig'
-
-# set java11
-echo 'Setup Java 11'
-OLD_JAVA_HOME=$JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home -v11)
-
-# presumes ANTLR is somewhere sensible 
-#TODO generalise to find in Maven Repo or download or etc. 
-
-ANTLR4=/usr/local/lib/antlr4-4.11.1-complete.jar
+mkdir ~/.local/lib/
+curl https://www.antlr.org/download/antlr-4.11.1-complete.jar -o ~/.local/lib/antlr-4.11.1-complete.jar
+ANTLR4=~/.local/lib/antlr-4.11.1-complete.jar
 VDMJ=~/.m2/repository/dk/au/ece/vdmj/vdmj/4.5.0-SNAPSHOT/vdmj-4.5.0-SNAPSHOT.jar
 CP="$ANTLR4:$VDMJ:$CLASSPATH"
 
 GRAMMARS='VDM.g4 VDMLex.g4' #Test.g4 
-if [[ "$#" -gt 1 ]]; then
-	echo 'No arguments'
-    GRAMMARS=
-fi 
-# call ANTLR to generate parser
-# antlr4 VDM.g4 VDMLex.g4 -listener -visitor -Xlog -atn -o ./.antlr/output
+
+rm -R ./.antlr/output 2> /dev/null
 echo 'Calling ANTLR4 parser generator with GRAMMARS = ' $GRAMMARS ' and ARGS = ' ${@}
-# -package vdmantlr
-java -Xmx500M -cp $CP org.antlr.v4.Tool $GRAMMARS ${@} -listener -visitor -atn -o ./.antlr/output
+java -Xmx500M -cp $CP org.antlr.v4.Tool $GRAMMARS ${@} -listener -visitor -atn -package vdmantlr.generated -o ./.antlr/output
 
 # compile generated files
 echo 'Compiling generarted parser'
-javac ./.antlr/output/*.java
+# javac -cp $CP ./.antlr/output/*.java
+cp ./.antlr/output/*.java ../java/vdmantlr/generated/
+cp ./.antlr/output/*.tokens ../java/vdmantlr/generated/
+
 
 #source gtest.sh "$@"
 #TODO allow starting in inner rules beyond sl_document?

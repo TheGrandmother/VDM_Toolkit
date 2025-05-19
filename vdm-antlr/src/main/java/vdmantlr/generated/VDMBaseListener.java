@@ -1,8 +1,5 @@
-// Generated from /Users/nljsf/Local/reps/git/VDM_Toolkit/plugins/vdm-antlr/src/main/antlr4/VDM.g4 by ANTLR 4.9.2
+// Generated from java-escape by ANTLR 4.11.1
 package vdmantlr.generated;
-
-//import com.fujitsu.vdmj.lex.Dialect;    
-
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -13,19 +10,32 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
+@SuppressWarnings("CheckReturnValue")
 public class VDMBaseListener implements VDMListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSl_document(VDMParser.Sl_documentContext ctx) { }
+	@Override public void enterSLModules(VDMParser.SLModulesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSl_document(VDMParser.Sl_documentContext ctx) { }
+	@Override public void exitSLModules(VDMParser.SLModulesContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSLFlatModule(VDMParser.SLFlatModuleContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSLFlatModule(VDMParser.SLFlatModuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -115,13 +125,25 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterType_import(VDMParser.Type_importContext ctx) { }
+	@Override public void enterNamedImport(VDMParser.NamedImportContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitType_import(VDMParser.Type_importContext ctx) { }
+	@Override public void exitNamedImport(VDMParser.NamedImportContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTypeDefinitionImport(VDMParser.TypeDefinitionImportContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTypeDefinitionImport(VDMParser.TypeDefinitionImportContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -439,13 +461,73 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSl_definition_block(VDMParser.Sl_definition_blockContext ctx) { }
+	@Override public void enterTypeDefinitions(VDMParser.TypeDefinitionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSl_definition_block(VDMParser.Sl_definition_blockContext ctx) { }
+	@Override public void exitTypeDefinitions(VDMParser.TypeDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStateDefinition(VDMParser.StateDefinitionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStateDefinition(VDMParser.StateDefinitionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterValueDefinitions(VDMParser.ValueDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitValueDefinitions(VDMParser.ValueDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunctionDefinitions(VDMParser.FunctionDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunctionDefinitions(VDMParser.FunctionDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOperationDefinitions(VDMParser.OperationDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOperationDefinitions(VDMParser.OperationDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTracesDefinitions(VDMParser.TracesDefinitionsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTracesDefinitions(VDMParser.TracesDefinitionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -523,13 +605,25 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInvariant_type_definition(VDMParser.Invariant_type_definitionContext ctx) { }
+	@Override public void enterNamedType(VDMParser.NamedTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInvariant_type_definition(VDMParser.Invariant_type_definitionContext ctx) { }
+	@Override public void exitNamedType(VDMParser.NamedTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRecordType(VDMParser.RecordTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRecordType(VDMParser.RecordTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -583,13 +677,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSeqType(VDMParser.SeqTypeContext ctx) { }
+	@Override public void enterFunctionType(VDMParser.FunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSeqType(VDMParser.SeqTypeContext ctx) { }
+	@Override public void exitFunctionType(VDMParser.FunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -602,6 +696,18 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitProductType(VDMParser.ProductTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqOfType(VDMParser.SeqOfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqOfType(VDMParser.SeqOfTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -631,6 +737,30 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterWildcardType(VDMParser.WildcardTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitWildcardType(VDMParser.WildcardTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInmapType(VDMParser.InmapTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInmapType(VDMParser.InmapTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterTypeVariable(VDMParser.TypeVariableContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -638,30 +768,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitTypeVariable(VDMParser.TypeVariableContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSetType(VDMParser.SetTypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSetType(VDMParser.SetTypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -691,6 +797,18 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSeq1OfType(VDMParser.Seq1OfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeq1OfType(VDMParser.Seq1OfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterQuoteType(VDMParser.QuoteTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -703,6 +821,30 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSet1OfType(VDMParser.Set1OfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSet1OfType(VDMParser.Set1OfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetOfType(VDMParser.SetOfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetOfType(VDMParser.SetOfTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterCompositeType(VDMParser.CompositeTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -710,18 +852,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCompositeType(VDMParser.CompositeTypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterVoid_function_type(VDMParser.Void_function_typeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitVoid_function_type(VDMParser.Void_function_typeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -931,37 +1061,25 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunction_type(VDMParser.Function_typeContext ctx) { }
+	@Override public void enterPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunction_type(VDMParser.Function_typeContext ctx) { }
+	@Override public void exitPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPartial_function_type(VDMParser.Partial_function_typeContext ctx) { }
+	@Override public void enterTotalFunctionType(VDMParser.TotalFunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPartial_function_type(VDMParser.Partial_function_typeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterTotal_function_type(VDMParser.Total_function_typeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitTotal_function_type(VDMParser.Total_function_typeContext ctx) { }
+	@Override public void exitTotalFunctionType(VDMParser.TotalFunctionTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -979,13 +1097,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunctionType(VDMParser.FunctionTypeContext ctx) { }
+	@Override public void enterFunctionParametersType(VDMParser.FunctionParametersTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunctionType(VDMParser.FunctionTypeContext ctx) { }
+	@Override public void exitFunctionParametersType(VDMParser.FunctionParametersTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1015,13 +1133,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInvariant(VDMParser.InvariantContext ctx) { }
+	@Override public void enterType_invariant(VDMParser.Type_invariantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInvariant(VDMParser.InvariantContext ctx) { }
+	@Override public void exitType_invariant(VDMParser.Type_invariantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1046,18 +1164,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitOrd_clause(VDMParser.Ord_clauseContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterInvariant_initial_function(VDMParser.Invariant_initial_functionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitInvariant_initial_function(VDMParser.Invariant_initial_functionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1603,13 +1709,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInvariant_definition(VDMParser.Invariant_definitionContext ctx) { }
+	@Override public void enterInstance_variable_invariant_definition(VDMParser.Instance_variable_invariant_definitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInvariant_definition(VDMParser.Invariant_definitionContext ctx) { }
+	@Override public void exitInstance_variable_invariant_definition(VDMParser.Instance_variable_invariant_definitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1939,18 +2045,6 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfExpr(VDMParser.IfExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitIfExpr(VDMParser.IfExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterMapEnumExpr(VDMParser.MapEnumExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -1963,13 +2057,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMapDomRestricExpr(VDMParser.MapDomRestricExprContext ctx) { }
+	@Override public void enterAbsoluteExpr(VDMParser.AbsoluteExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMapDomRestricExpr(VDMParser.MapDomRestricExprContext ctx) { }
+	@Override public void exitAbsoluteExpr(VDMParser.AbsoluteExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2023,6 +2117,486 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSubSeqExpr(VDMParser.SubSeqExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSubSeqExpr(VDMParser.SubSeqExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqHdExpr(VDMParser.SeqHdExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqHdExpr(VDMParser.SeqHdExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTupleSelExpr(VDMParser.TupleSelExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTupleSelExpr(VDMParser.TupleSelExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNarrowExpr(VDMParser.NarrowExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNarrowExpr(VDMParser.NarrowExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCardinalityExpr(VDMParser.CardinalityExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCardinalityExpr(VDMParser.CardinalityExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMapOverrideExpr(VDMParser.MapOverrideExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMapOverrideExpr(VDMParser.MapOverrideExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqReverseExpr(VDMParser.SeqReverseExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqReverseExpr(VDMParser.SeqReverseExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMapUnionExpr(VDMParser.MapUnionExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMapUnionExpr(VDMParser.MapUnionExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetCompExpr(VDMParser.SetCompExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetCompExpr(VDMParser.SetCompExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRTTimeExpr(VDMParser.RTTimeExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRTTimeExpr(VDMParser.RTTimeExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVariableExpr(VDMParser.VariableExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVariableExpr(VDMParser.VariableExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMapDomExpr(VDMParser.MapDomExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMapDomExpr(VDMParser.MapDomExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterQuantifiedExpr(VDMParser.QuantifiedExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitQuantifiedExpr(VDMParser.QuantifiedExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDefExpr(VDMParser.DefExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDefExpr(VDMParser.DefExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPowerSetExpr(VDMParser.PowerSetExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPowerSetExpr(VDMParser.PowerSetExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLogicalAndExpr(VDMParser.LogicalAndExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLogicalAndExpr(VDMParser.LogicalAndExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqEnumExpr(VDMParser.SeqEnumExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqEnumExpr(VDMParser.SeqEnumExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRTReqExpr(VDMParser.RTReqExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRTReqExpr(VDMParser.RTReqExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRecordMkExpr(VDMParser.RecordMkExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRecordMkExpr(VDMParser.RecordMkExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFloorExpr(VDMParser.FloorExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFloorExpr(VDMParser.FloorExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNotExpr(VDMParser.NotExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNotExpr(VDMParser.NotExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqCompExpr(VDMParser.SeqCompExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqCompExpr(VDMParser.SeqCompExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRTActiveExpr(VDMParser.RTActiveExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRTActiveExpr(VDMParser.RTActiveExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetEnumExpr(VDMParser.SetEnumExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetEnumExpr(VDMParser.SetEnumExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetDinterExpr(VDMParser.SetDinterExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetDinterExpr(VDMParser.SetDinterExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFieldSelExpr(VDMParser.FieldSelExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFieldSelExpr(VDMParser.FieldSelExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqIndsExpr(VDMParser.SeqIndsExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqIndsExpr(VDMParser.SeqIndsExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPPSameClassExpr(VDMParser.PPSameClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPPSameClassExpr(VDMParser.PPSameClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPPNewExpr(VDMParser.PPNewExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPPNewExpr(VDMParser.PPNewExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeqLenExpr(VDMParser.SeqLenExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeqLenExpr(VDMParser.SeqLenExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIfExpr(VDMParser.IfExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIfExpr(VDMParser.IfExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterLetBestExpr(VDMParser.LetBestExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2054,18 +2628,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitOldNameExpr(VDMParser.OldNameExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSubSeqExpr(VDMParser.SubSeqExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSubSeqExpr(VDMParser.SubSeqExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2131,13 +2693,25 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTupleSelExpr(VDMParser.TupleSelExprContext ctx) { }
+	@Override public void enterSeqElemsExpr(VDMParser.SeqElemsExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTupleSelExpr(VDMParser.TupleSelExprContext ctx) { }
+	@Override public void exitSeqElemsExpr(VDMParser.SeqElemsExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetDunionExpr(VDMParser.SetDunionExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetDunionExpr(VDMParser.SetDunionExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2155,18 +2729,6 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNarrowExpr(VDMParser.NarrowExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNarrowExpr(VDMParser.NarrowExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterRelationalLessThanExpr(VDMParser.RelationalLessThanExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2174,30 +2736,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitRelationalLessThanExpr(VDMParser.RelationalLessThanExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2227,37 +2765,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx) { }
+	@Override public void enterMapRngExpr(VDMParser.MapRngExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterUnaryExpr(VDMParser.UnaryExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitUnaryExpr(VDMParser.UnaryExprContext ctx) { }
+	@Override public void exitMapRngExpr(VDMParser.MapRngExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2270,18 +2784,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitTupleMkExpr(VDMParser.TupleMkExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMapUnionExpr(VDMParser.MapUnionExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMapUnionExpr(VDMParser.MapUnionExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2311,42 +2813,6 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSetCompExpr(VDMParser.SetCompExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSetCompExpr(VDMParser.SetCompExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterPPSelfExpr(VDMParser.PPSelfExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2366,18 +2832,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitGeneralIsExpr(VDMParser.GeneralIsExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterRTTimeExpr(VDMParser.RTTimeExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRTTimeExpr(VDMParser.RTTimeExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2431,61 +2885,37 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterQuantifiedExpr(VDMParser.QuantifiedExprContext ctx) { }
+	@Override public void enterSeqTlExpr(VDMParser.SeqTlExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitQuantifiedExpr(VDMParser.QuantifiedExprContext ctx) { }
+	@Override public void exitSeqTlExpr(VDMParser.SeqTlExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDefExpr(VDMParser.DefExprContext ctx) { }
+	@Override public void enterMapDomRestrictExpr(VDMParser.MapDomRestrictExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDefExpr(VDMParser.DefExprContext ctx) { }
+	@Override public void exitMapDomRestrictExpr(VDMParser.MapDomRestrictExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMapSeqOverrideExpr(VDMParser.MapSeqOverrideExprContext ctx) { }
+	@Override public void enterMapInverseExpr(VDMParser.MapInverseExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMapSeqOverrideExpr(VDMParser.MapSeqOverrideExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNameExpr(VDMParser.NameExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNameExpr(VDMParser.NameExprContext ctx) { }
+	@Override public void exitMapInverseExpr(VDMParser.MapInverseExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2503,18 +2933,6 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogicalAndExpr(VDMParser.LogicalAndExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitLogicalAndExpr(VDMParser.LogicalAndExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterCasesExpr(VDMParser.CasesExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2522,30 +2940,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCasesExpr(VDMParser.CasesExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqEnumExpr(VDMParser.SeqEnumExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqEnumExpr(VDMParser.SeqEnumExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterApplyExpr(VDMParser.ApplyExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitApplyExpr(VDMParser.ApplyExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2563,25 +2957,25 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRTReqExpr(VDMParser.RTReqExprContext ctx) { }
+	@Override public void enterApplyExpr(VDMParser.ApplyExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRTReqExpr(VDMParser.RTReqExprContext ctx) { }
+	@Override public void exitApplyExpr(VDMParser.ApplyExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRecordMkExpr(VDMParser.RecordMkExprContext ctx) { }
+	@Override public void enterSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRecordMkExpr(VDMParser.RecordMkExprContext ctx) { }
+	@Override public void exitSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2618,18 +3012,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitRTFinExpr(VDMParser.RTFinExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqCompExpr(VDMParser.SeqCompExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqCompExpr(VDMParser.SeqCompExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2695,18 +3077,6 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterMapDomFilterExpr(VDMParser.MapDomFilterExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2726,18 +3096,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitUndefinedExpr(VDMParser.UndefinedExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterRTActiveExpr(VDMParser.RTActiveExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRTActiveExpr(VDMParser.RTActiveExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2767,13 +3125,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSetEnumExpr(VDMParser.SetEnumExprContext ctx) { }
+	@Override public void enterMapMergeExpr(VDMParser.MapMergeExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSetEnumExpr(VDMParser.SetEnumExprContext ctx) { }
+	@Override public void exitMapMergeExpr(VDMParser.MapMergeExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2791,30 +3149,6 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFieldSelExpr(VDMParser.FieldSelExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFieldSelExpr(VDMParser.FieldSelExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterSeqConcatExpr(VDMParser.SeqConcatExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2827,25 +3161,13 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPPSameClassExpr(VDMParser.PPSameClassExprContext ctx) { }
+	@Override public void enterUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPPSameClassExpr(VDMParser.PPSameClassExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterPPNewExpr(VDMParser.PPNewExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPPNewExpr(VDMParser.PPNewExprContext ctx) { }
+	@Override public void exitUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2858,6 +3180,30 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitPPIsOfBaseClassExpr(VDMParser.PPIsOfBaseClassExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVariable(VDMParser.VariableContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVariable(VDMParser.VariableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2978,246 +3324,6 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitOthers_expression(VDMParser.Others_expressionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterAbsoluteExpr(VDMParser.AbsoluteExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitAbsoluteExpr(VDMParser.AbsoluteExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFloorExpr(VDMParser.FloorExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFloorExpr(VDMParser.FloorExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNotExpr(VDMParser.NotExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNotExpr(VDMParser.NotExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterCardinalityExpr(VDMParser.CardinalityExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCardinalityExpr(VDMParser.CardinalityExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterPowerSetExpr(VDMParser.PowerSetExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPowerSetExpr(VDMParser.PowerSetExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSetDunionExpr(VDMParser.SetDunionExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSetDunionExpr(VDMParser.SetDunionExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSetDinterExpr(VDMParser.SetDinterExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSetDinterExpr(VDMParser.SetDinterExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqHdExpr(VDMParser.SeqHdExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqHdExpr(VDMParser.SeqHdExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqTlExpr(VDMParser.SeqTlExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqTlExpr(VDMParser.SeqTlExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqLenExpr(VDMParser.SeqLenExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqLenExpr(VDMParser.SeqLenExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqElemsExpr(VDMParser.SeqElemsExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqElemsExpr(VDMParser.SeqElemsExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqIndsExpr(VDMParser.SeqIndsExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqIndsExpr(VDMParser.SeqIndsExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqReverseExpr(VDMParser.SeqReverseExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqReverseExpr(VDMParser.SeqReverseExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMapDomExpr(VDMParser.MapDomExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMapDomExpr(VDMParser.MapDomExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMapRngExpr(VDMParser.MapRngExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMapRngExpr(VDMParser.MapRngExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMapMergeExpr(VDMParser.MapMergeExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMapMergeExpr(VDMParser.MapMergeExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMapInverseExpr(VDMParser.MapInverseExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMapInverseExpr(VDMParser.MapInverseExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -3367,6 +3473,18 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterMaplet_list(VDMParser.Maplet_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMaplet_list(VDMParser.Maplet_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterMaplet(VDMParser.MapletContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -3439,6 +3557,18 @@ public class VDMBaseListener implements VDMListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterRecord_modification_list(VDMParser.Record_modification_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRecord_modification_list(VDMParser.Record_modification_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterRecord_modification(VDMParser.Record_modificationContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -3494,6 +3624,18 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFunction_type_instantiation(VDMParser.Function_type_instantiationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterType_list(VDMParser.Type_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitType_list(VDMParser.Type_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -4742,6 +4884,18 @@ public class VDMBaseListener implements VDMListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitIdName(VDMParser.IdNameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOld_name(VDMParser.Old_nameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOld_name(VDMParser.Old_nameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

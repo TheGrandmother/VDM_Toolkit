@@ -1,8 +1,5 @@
-// Generated from /Users/nljsf/Local/reps/git/VDM_Toolkit/plugins/vdm-antlr/src/main/antlr4/VDM.g4 by ANTLR 4.9.2
+// Generated from java-escape by ANTLR 4.11.1
 package vdmantlr.generated;
-
-//import com.fujitsu.vdmj.lex.Dialect;    
-
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -14,11 +11,19 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#sl_document}.
+	 * Visit a parse tree produced by the {@code SLModules}
+	 * labeled alternative in {@link VDMParser#sl_document}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSl_document(VDMParser.Sl_documentContext ctx);
+	T visitSLModules(VDMParser.SLModulesContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SLFlatModule}
+	 * labeled alternative in {@link VDMParser#sl_document}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSLFlatModule(VDMParser.SLFlatModuleContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#module}.
 	 * @param ctx the parse tree
@@ -62,11 +67,19 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitImport_types_signature(VDMParser.Import_types_signatureContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#type_import}.
+	 * Visit a parse tree produced by the {@code NamedImport}
+	 * labeled alternative in {@link VDMParser#type_import}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitType_import(VDMParser.Type_importContext ctx);
+	T visitNamedImport(VDMParser.NamedImportContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code TypeDefinitionImport}
+	 * labeled alternative in {@link VDMParser#type_import}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTypeDefinitionImport(VDMParser.TypeDefinitionImportContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#import_values_signature}.
 	 * @param ctx the parse tree
@@ -224,11 +237,47 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPp_definition_block(VDMParser.Pp_definition_blockContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#sl_definition_block}.
+	 * Visit a parse tree produced by the {@code TypeDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSl_definition_block(VDMParser.Sl_definition_blockContext ctx);
+	T visitTypeDefinitions(VDMParser.TypeDefinitionsContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code StateDefinition}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStateDefinition(VDMParser.StateDefinitionContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ValueDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitValueDefinitions(VDMParser.ValueDefinitionsContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code FunctionDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFunctionDefinitions(VDMParser.FunctionDefinitionsContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code OperationDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOperationDefinitions(VDMParser.OperationDefinitionsContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code TracesDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTracesDefinitions(VDMParser.TracesDefinitionsContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#pp_type_definitions}.
 	 * @param ctx the parse tree
@@ -266,11 +315,19 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitType_definition(VDMParser.Type_definitionContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#invariant_type_definition}.
+	 * Visit a parse tree produced by the {@code NamedType}
+	 * labeled alternative in {@link VDMParser#invariant_type_definition}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitInvariant_type_definition(VDMParser.Invariant_type_definitionContext ctx);
+	T visitNamedType(VDMParser.NamedTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RecordType}
+	 * labeled alternative in {@link VDMParser#invariant_type_definition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRecordType(VDMParser.RecordTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#type_specification}.
 	 * @param ctx the parse tree
@@ -299,12 +356,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBasicType(VDMParser.BasicTypeContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code SeqType}
+	 * Visit a parse tree produced by the {@code FunctionType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSeqType(VDMParser.SeqTypeContext ctx);
+	T visitFunctionType(VDMParser.FunctionTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ProductType}
 	 * labeled alternative in {@link VDMParser#type}.
@@ -312,6 +369,13 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitProductType(VDMParser.ProductTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqOfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqOfType(VDMParser.SeqOfTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code MapType}
 	 * labeled alternative in {@link VDMParser#type}.
@@ -327,26 +391,26 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitOptionalType(VDMParser.OptionalTypeContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code WildcardType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWildcardType(VDMParser.WildcardTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code InmapType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInmapType(VDMParser.InmapTypeContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code TypeVariable}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitTypeVariable(VDMParser.TypeVariableContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SetType}
-	 * labeled alternative in {@link VDMParser#type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSetType(VDMParser.SetTypeContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code PartialFunctionType}
-	 * labeled alternative in {@link VDMParser#type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code VoidFunctionType}
 	 * labeled alternative in {@link VDMParser#type}.
@@ -362,6 +426,13 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBracketedType(VDMParser.BracketedTypeContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code Seq1OfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeq1OfType(VDMParser.Seq1OfTypeContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code QuoteType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
@@ -369,18 +440,26 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitQuoteType(VDMParser.QuoteTypeContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code Set1OfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSet1OfType(VDMParser.Set1OfTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SetOfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetOfType(VDMParser.SetOfTypeContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code CompositeType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitCompositeType(VDMParser.CompositeTypeContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link VDMParser#void_function_type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitVoid_function_type(VDMParser.Void_function_typeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#bracketed_type}.
 	 * @param ctx the parse tree
@@ -484,23 +563,19 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitInjective_map_type(VDMParser.Injective_map_typeContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#function_type}.
+	 * Visit a parse tree produced by the {@code PartialFunctionType}
+	 * labeled alternative in {@link VDMParser#function_type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFunction_type(VDMParser.Function_typeContext ctx);
+	T visitPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#partial_function_type}.
+	 * Visit a parse tree produced by the {@code TotalFunctionType}
+	 * labeled alternative in {@link VDMParser#function_type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPartial_function_type(VDMParser.Partial_function_typeContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link VDMParser#total_function_type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitTotal_function_type(VDMParser.Total_function_typeContext ctx);
+	T visitTotalFunctionType(VDMParser.TotalFunctionTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code VoidType}
 	 * labeled alternative in {@link VDMParser#discretionary_type}.
@@ -509,12 +584,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVoidType(VDMParser.VoidTypeContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code FunctionType}
+	 * Visit a parse tree produced by the {@code FunctionParametersType}
 	 * labeled alternative in {@link VDMParser#discretionary_type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFunctionType(VDMParser.FunctionTypeContext ctx);
+	T visitFunctionParametersType(VDMParser.FunctionParametersTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#type_name}.
 	 * @param ctx the parse tree
@@ -528,11 +603,11 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitType_variable(VDMParser.Type_variableContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#invariant}.
+	 * Visit a parse tree produced by {@link VDMParser#type_invariant}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitInvariant(VDMParser.InvariantContext ctx);
+	T visitType_invariant(VDMParser.Type_invariantContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#eq_clause}.
 	 * @param ctx the parse tree
@@ -545,12 +620,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitOrd_clause(VDMParser.Ord_clauseContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link VDMParser#invariant_initial_function}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitInvariant_initial_function(VDMParser.Invariant_initial_functionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#state_definition}.
 	 * @param ctx the parse tree
@@ -822,11 +891,11 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAccess_assignment_definition(VDMParser.Access_assignment_definitionContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link VDMParser#invariant_definition}.
+	 * Visit a parse tree produced by {@link VDMParser#instance_variable_invariant_definition}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitInvariant_definition(VDMParser.Invariant_definitionContext ctx);
+	T visitInstance_variable_invariant_definition(VDMParser.Instance_variable_invariant_definitionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#synchronization_definitions}.
 	 * @param ctx the parse tree
@@ -991,13 +1060,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSetPSubsetExpr(VDMParser.SetPSubsetExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code IfExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitIfExpr(VDMParser.IfExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code MapEnumExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1005,12 +1067,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMapEnumExpr(VDMParser.MapEnumExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code MapDomRestricExpr}
+	 * Visit a parse tree produced by the {@code AbsoluteExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitMapDomRestricExpr(VDMParser.MapDomRestricExprContext ctx);
+	T visitAbsoluteExpr(VDMParser.AbsoluteExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code SetRangeExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1040,6 +1102,286 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBracketedExpr(VDMParser.BracketedExprContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code SubSeqExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSubSeqExpr(VDMParser.SubSeqExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqHdExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqHdExpr(VDMParser.SeqHdExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code TupleSelExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTupleSelExpr(VDMParser.TupleSelExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code NarrowExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNarrowExpr(VDMParser.NarrowExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code CardinalityExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCardinalityExpr(VDMParser.CardinalityExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RelationalLessThanEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ArithmeticPlusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RelationalEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code MapRngFilterExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code MapOverrideExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMapOverrideExpr(VDMParser.MapOverrideExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqReverseExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqReverseExpr(VDMParser.SeqReverseExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code MapUnionExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMapUnionExpr(VDMParser.MapUnionExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ArithmeticMinusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ArithmeticMultiplicationExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SetCompExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetCompExpr(VDMParser.SetCompExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RTTimeExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRTTimeExpr(VDMParser.RTTimeExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code VariableExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVariableExpr(VDMParser.VariableExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code MapDomExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMapDomExpr(VDMParser.MapDomExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code QuantifiedExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitQuantifiedExpr(VDMParser.QuantifiedExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code DefExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDefExpr(VDMParser.DefExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RelationalNotEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code PowerSetExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPowerSetExpr(VDMParser.PowerSetExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code LogicalAndExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicalAndExpr(VDMParser.LogicalAndExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqEnumExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqEnumExpr(VDMParser.SeqEnumExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RTReqExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRTReqExpr(VDMParser.RTReqExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RecordMkExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRecordMkExpr(VDMParser.RecordMkExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code FloorExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFloorExpr(VDMParser.FloorExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code NotExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNotExpr(VDMParser.NotExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqCompExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqCompExpr(VDMParser.SeqCompExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code PPSameBaseClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code RTActiveExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRTActiveExpr(VDMParser.RTActiveExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SetEnumExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetEnumExpr(VDMParser.SetEnumExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SetDinterExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetDinterExpr(VDMParser.SetDinterExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code PPIsOfClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code FieldSelExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFieldSelExpr(VDMParser.FieldSelExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqIndsExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqIndsExpr(VDMParser.SeqIndsExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code PPSameClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPPSameClassExpr(VDMParser.PPSameClassExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code PPNewExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPPNewExpr(VDMParser.PPNewExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SeqLenExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeqLenExpr(VDMParser.SeqLenExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code IfExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIfExpr(VDMParser.IfExprContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code LetBestExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1060,13 +1402,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitOldNameExpr(VDMParser.OldNameExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SubSeqExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSubSeqExpr(VDMParser.SubSeqExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ArithmeticIntegerDivisionExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1103,12 +1438,19 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPreconditionExpr(VDMParser.PreconditionExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code TupleSelExpr}
+	 * Visit a parse tree produced by the {@code SeqElemsExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitTupleSelExpr(VDMParser.TupleSelExprContext ctx);
+	T visitSeqElemsExpr(VDMParser.SeqElemsExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code SetDunionExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetDunionExpr(VDMParser.SetDunionExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code RelationalGreaterThanExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1117,33 +1459,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitRelationalGreaterThanExpr(VDMParser.RelationalGreaterThanExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code NarrowExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNarrowExpr(VDMParser.NarrowExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code RelationalLessThanExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitRelationalLessThanExpr(VDMParser.RelationalLessThanExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code RelationalLessThanEqualExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code ArithmeticPlusExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code LetExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1159,26 +1480,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitLambdaExpr(VDMParser.LambdaExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code RelationalEqualExpr}
+	 * Visit a parse tree produced by the {@code MapRngExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code MapRngFilterExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code UnaryExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitUnaryExpr(VDMParser.UnaryExprContext ctx);
+	T visitMapRngExpr(VDMParser.MapRngExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code TupleMkExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1186,13 +1493,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitTupleMkExpr(VDMParser.TupleMkExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code MapUnionExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMapUnionExpr(VDMParser.MapUnionExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ArithmeticReminderExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1208,27 +1508,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitRTActExpr(VDMParser.RTActExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code ArithmeticMinusExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code ArithmeticMultiplicationExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SetCompExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSetCompExpr(VDMParser.SetCompExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code PPSelfExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1242,13 +1521,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitGeneralIsExpr(VDMParser.GeneralIsExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code RTTimeExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitRTTimeExpr(VDMParser.RTTimeExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ArithmeticDivideExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1278,40 +1550,26 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSetInterExpr(VDMParser.SetInterExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code QuantifiedExpr}
+	 * Visit a parse tree produced by the {@code SeqTlExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitQuantifiedExpr(VDMParser.QuantifiedExprContext ctx);
+	T visitSeqTlExpr(VDMParser.SeqTlExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code DefExpr}
+	 * Visit a parse tree produced by the {@code MapDomRestrictExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitDefExpr(VDMParser.DefExprContext ctx);
+	T visitMapDomRestrictExpr(VDMParser.MapDomRestrictExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code MapSeqOverrideExpr}
+	 * Visit a parse tree produced by the {@code MapInverseExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitMapSeqOverrideExpr(VDMParser.MapSeqOverrideExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code RelationalNotEqualExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code NameExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNameExpr(VDMParser.NameExprContext ctx);
+	T visitMapInverseExpr(VDMParser.MapInverseExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code IterateExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1320,33 +1578,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitIterateExpr(VDMParser.IterateExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code LogicalAndExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitLogicalAndExpr(VDMParser.LogicalAndExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code CasesExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitCasesExpr(VDMParser.CasesExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqEnumExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqEnumExpr(VDMParser.SeqEnumExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code ApplyExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitApplyExpr(VDMParser.ApplyExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code SetDiffExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1355,19 +1592,19 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSetDiffExpr(VDMParser.SetDiffExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code RTReqExpr}
+	 * Visit a parse tree produced by the {@code ApplyExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitRTReqExpr(VDMParser.RTReqExprContext ctx);
+	T visitApplyExpr(VDMParser.ApplyExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code RecordMkExpr}
+	 * Visit a parse tree produced by the {@code SeqDistConcExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitRecordMkExpr(VDMParser.RecordMkExprContext ctx);
+	T visitSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code SetSubsetExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1389,13 +1626,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitRTFinExpr(VDMParser.RTFinExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqCompExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqCompExpr(VDMParser.SeqCompExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code SymbolicLitExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1432,13 +1662,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPPThreadIdExpr(VDMParser.PPThreadIdExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code PPSameBaseClassExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code MapDomFilterExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1452,13 +1675,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitUndefinedExpr(VDMParser.UndefinedExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code RTActiveExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitRTActiveExpr(VDMParser.RTActiveExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code RecordMuExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1474,12 +1690,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitArithmeticModuloExpr(VDMParser.ArithmeticModuloExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code SetEnumExpr}
+	 * Visit a parse tree produced by the {@code MapMergeExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSetEnumExpr(VDMParser.SetEnumExprContext ctx);
+	T visitMapMergeExpr(VDMParser.MapMergeExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code LogicalOrExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1488,20 +1704,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitLogicalOrExpr(VDMParser.LogicalOrExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code PPIsOfClassExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code FieldSelExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitFieldSelExpr(VDMParser.FieldSelExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code SeqConcatExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1509,19 +1711,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSeqConcatExpr(VDMParser.SeqConcatExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code PPSameClassExpr}
+	 * Visit a parse tree produced by the {@code UnaryPlusExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPPSameClassExpr(VDMParser.PPSameClassExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code PPNewExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPPNewExpr(VDMParser.PPNewExprContext ctx);
+	T visitUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code PPIsOfBaseClassExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1529,6 +1724,19 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitPPIsOfBaseClassExpr(VDMParser.PPIsOfBaseClassExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code UnaryMinusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link VDMParser#variable}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVariable(VDMParser.VariableContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#bracketed_expression}.
 	 * @param ctx the parse tree
@@ -1589,146 +1797,6 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitOthers_expression(VDMParser.Others_expressionContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code UnaryPlusExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code UnaryMinusExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code AbsoluteExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitAbsoluteExpr(VDMParser.AbsoluteExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code FloorExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitFloorExpr(VDMParser.FloorExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code NotExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNotExpr(VDMParser.NotExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code CardinalityExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitCardinalityExpr(VDMParser.CardinalityExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code PowerSetExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPowerSetExpr(VDMParser.PowerSetExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SetDunionExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSetDunionExpr(VDMParser.SetDunionExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SetDinterExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSetDinterExpr(VDMParser.SetDinterExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqHdExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqHdExpr(VDMParser.SeqHdExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqTlExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqTlExpr(VDMParser.SeqTlExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqLenExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqLenExpr(VDMParser.SeqLenExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqElemsExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqElemsExpr(VDMParser.SeqElemsExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqIndsExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqIndsExpr(VDMParser.SeqIndsExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqReverseExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqReverseExpr(VDMParser.SeqReverseExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code SeqDistConcExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code MapDomExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMapDomExpr(VDMParser.MapDomExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code MapRngExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMapRngExpr(VDMParser.MapRngExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code MapMergeExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMapMergeExpr(VDMParser.MapMergeExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code MapInverseExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMapInverseExpr(VDMParser.MapInverseExprContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#quantified_expression}.
 	 * @param ctx the parse tree
@@ -1802,6 +1870,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMap_enumeration(VDMParser.Map_enumerationContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link VDMParser#maplet_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMaplet_list(VDMParser.Maplet_listContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link VDMParser#maplet}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -1838,6 +1912,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitRecord_modifier(VDMParser.Record_modifierContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link VDMParser#record_modification_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRecord_modification_list(VDMParser.Record_modification_listContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link VDMParser#record_modification}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -1867,6 +1947,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFunction_type_instantiation(VDMParser.Function_type_instantiationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link VDMParser#type_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitType_list(VDMParser.Type_listContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link VDMParser#lambda_expression}.
 	 * @param ctx the parse tree
@@ -2521,6 +2607,12 @@ public interface VDMVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitIdName(VDMParser.IdNameContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link VDMParser#old_name}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOld_name(VDMParser.Old_nameContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code NumericLiteral}
 	 * labeled alternative in {@link VDMParser#symbolic_literal}.

@@ -1,8 +1,5 @@
-// Generated from /Users/nljsf/Local/reps/git/VDM_Toolkit/plugins/vdm-antlr/src/main/antlr4/VDM.g4 by ANTLR 4.9.2
+// Generated from java-escape by ANTLR 4.11.1
 package vdmantlr.generated;
-
-//import com.fujitsu.vdmj.lex.Dialect;    
-
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -11,15 +8,29 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface VDMListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#sl_document}.
+	 * Enter a parse tree produced by the {@code SLModules}
+	 * labeled alternative in {@link VDMParser#sl_document}.
 	 * @param ctx the parse tree
 	 */
-	void enterSl_document(VDMParser.Sl_documentContext ctx);
+	void enterSLModules(VDMParser.SLModulesContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#sl_document}.
+	 * Exit a parse tree produced by the {@code SLModules}
+	 * labeled alternative in {@link VDMParser#sl_document}.
 	 * @param ctx the parse tree
 	 */
-	void exitSl_document(VDMParser.Sl_documentContext ctx);
+	void exitSLModules(VDMParser.SLModulesContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SLFlatModule}
+	 * labeled alternative in {@link VDMParser#sl_document}.
+	 * @param ctx the parse tree
+	 */
+	void enterSLFlatModule(VDMParser.SLFlatModuleContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SLFlatModule}
+	 * labeled alternative in {@link VDMParser#sl_document}.
+	 * @param ctx the parse tree
+	 */
+	void exitSLFlatModule(VDMParser.SLFlatModuleContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#module}.
 	 * @param ctx the parse tree
@@ -91,15 +102,29 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitImport_types_signature(VDMParser.Import_types_signatureContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#type_import}.
+	 * Enter a parse tree produced by the {@code NamedImport}
+	 * labeled alternative in {@link VDMParser#type_import}.
 	 * @param ctx the parse tree
 	 */
-	void enterType_import(VDMParser.Type_importContext ctx);
+	void enterNamedImport(VDMParser.NamedImportContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#type_import}.
+	 * Exit a parse tree produced by the {@code NamedImport}
+	 * labeled alternative in {@link VDMParser#type_import}.
 	 * @param ctx the parse tree
 	 */
-	void exitType_import(VDMParser.Type_importContext ctx);
+	void exitNamedImport(VDMParser.NamedImportContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TypeDefinitionImport}
+	 * labeled alternative in {@link VDMParser#type_import}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeDefinitionImport(VDMParser.TypeDefinitionImportContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TypeDefinitionImport}
+	 * labeled alternative in {@link VDMParser#type_import}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeDefinitionImport(VDMParser.TypeDefinitionImportContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#import_values_signature}.
 	 * @param ctx the parse tree
@@ -361,15 +386,77 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitPp_definition_block(VDMParser.Pp_definition_blockContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#sl_definition_block}.
+	 * Enter a parse tree produced by the {@code TypeDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
 	 * @param ctx the parse tree
 	 */
-	void enterSl_definition_block(VDMParser.Sl_definition_blockContext ctx);
+	void enterTypeDefinitions(VDMParser.TypeDefinitionsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#sl_definition_block}.
+	 * Exit a parse tree produced by the {@code TypeDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
 	 * @param ctx the parse tree
 	 */
-	void exitSl_definition_block(VDMParser.Sl_definition_blockContext ctx);
+	void exitTypeDefinitions(VDMParser.TypeDefinitionsContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code StateDefinition}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterStateDefinition(VDMParser.StateDefinitionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code StateDefinition}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitStateDefinition(VDMParser.StateDefinitionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ValueDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterValueDefinitions(VDMParser.ValueDefinitionsContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ValueDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitValueDefinitions(VDMParser.ValueDefinitionsContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FunctionDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionDefinitions(VDMParser.FunctionDefinitionsContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FunctionDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionDefinitions(VDMParser.FunctionDefinitionsContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code OperationDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterOperationDefinitions(VDMParser.OperationDefinitionsContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code OperationDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitOperationDefinitions(VDMParser.OperationDefinitionsContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TracesDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterTracesDefinitions(VDMParser.TracesDefinitionsContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TracesDefinitions}
+	 * labeled alternative in {@link VDMParser#sl_definition_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitTracesDefinitions(VDMParser.TracesDefinitionsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#pp_type_definitions}.
 	 * @param ctx the parse tree
@@ -431,15 +518,29 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitType_definition(VDMParser.Type_definitionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#invariant_type_definition}.
+	 * Enter a parse tree produced by the {@code NamedType}
+	 * labeled alternative in {@link VDMParser#invariant_type_definition}.
 	 * @param ctx the parse tree
 	 */
-	void enterInvariant_type_definition(VDMParser.Invariant_type_definitionContext ctx);
+	void enterNamedType(VDMParser.NamedTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#invariant_type_definition}.
+	 * Exit a parse tree produced by the {@code NamedType}
+	 * labeled alternative in {@link VDMParser#invariant_type_definition}.
 	 * @param ctx the parse tree
 	 */
-	void exitInvariant_type_definition(VDMParser.Invariant_type_definitionContext ctx);
+	void exitNamedType(VDMParser.NamedTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RecordType}
+	 * labeled alternative in {@link VDMParser#invariant_type_definition}.
+	 * @param ctx the parse tree
+	 */
+	void enterRecordType(VDMParser.RecordTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RecordType}
+	 * labeled alternative in {@link VDMParser#invariant_type_definition}.
+	 * @param ctx the parse tree
+	 */
+	void exitRecordType(VDMParser.RecordTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#type_specification}.
 	 * @param ctx the parse tree
@@ -487,17 +588,17 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitBasicType(VDMParser.BasicTypeContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code SeqType}
+	 * Enter a parse tree produced by the {@code FunctionType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void enterSeqType(VDMParser.SeqTypeContext ctx);
+	void enterFunctionType(VDMParser.FunctionTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code SeqType}
+	 * Exit a parse tree produced by the {@code FunctionType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void exitSeqType(VDMParser.SeqTypeContext ctx);
+	void exitFunctionType(VDMParser.FunctionTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ProductType}
 	 * labeled alternative in {@link VDMParser#type}.
@@ -510,6 +611,18 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitProductType(VDMParser.ProductTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqOfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqOfType(VDMParser.SeqOfTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqOfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqOfType(VDMParser.SeqOfTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code MapType}
 	 * labeled alternative in {@link VDMParser#type}.
@@ -535,6 +648,30 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitOptionalType(VDMParser.OptionalTypeContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code WildcardType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterWildcardType(VDMParser.WildcardTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code WildcardType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitWildcardType(VDMParser.WildcardTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code InmapType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterInmapType(VDMParser.InmapTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code InmapType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitInmapType(VDMParser.InmapTypeContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code TypeVariable}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
@@ -546,30 +683,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTypeVariable(VDMParser.TypeVariableContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SetType}
-	 * labeled alternative in {@link VDMParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetType(VDMParser.SetTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SetType}
-	 * labeled alternative in {@link VDMParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetType(VDMParser.SetTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code PartialFunctionType}
-	 * labeled alternative in {@link VDMParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void enterPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code PartialFunctionType}
-	 * labeled alternative in {@link VDMParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void exitPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code VoidFunctionType}
 	 * labeled alternative in {@link VDMParser#type}.
@@ -595,6 +708,18 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitBracketedType(VDMParser.BracketedTypeContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code Seq1OfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeq1OfType(VDMParser.Seq1OfTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Seq1OfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeq1OfType(VDMParser.Seq1OfTypeContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code QuoteType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
@@ -607,6 +732,30 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitQuoteType(VDMParser.QuoteTypeContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code Set1OfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterSet1OfType(VDMParser.Set1OfTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Set1OfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitSet1OfType(VDMParser.Set1OfTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SetOfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetOfType(VDMParser.SetOfTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SetOfType}
+	 * labeled alternative in {@link VDMParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetOfType(VDMParser.SetOfTypeContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code CompositeType}
 	 * labeled alternative in {@link VDMParser#type}.
 	 * @param ctx the parse tree
@@ -618,16 +767,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCompositeType(VDMParser.CompositeTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link VDMParser#void_function_type}.
-	 * @param ctx the parse tree
-	 */
-	void enterVoid_function_type(VDMParser.Void_function_typeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link VDMParser#void_function_type}.
-	 * @param ctx the parse tree
-	 */
-	void exitVoid_function_type(VDMParser.Void_function_typeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#bracketed_type}.
 	 * @param ctx the parse tree
@@ -799,35 +938,29 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitInjective_map_type(VDMParser.Injective_map_typeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#function_type}.
+	 * Enter a parse tree produced by the {@code PartialFunctionType}
+	 * labeled alternative in {@link VDMParser#function_type}.
 	 * @param ctx the parse tree
 	 */
-	void enterFunction_type(VDMParser.Function_typeContext ctx);
+	void enterPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#function_type}.
+	 * Exit a parse tree produced by the {@code PartialFunctionType}
+	 * labeled alternative in {@link VDMParser#function_type}.
 	 * @param ctx the parse tree
 	 */
-	void exitFunction_type(VDMParser.Function_typeContext ctx);
+	void exitPartialFunctionType(VDMParser.PartialFunctionTypeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#partial_function_type}.
+	 * Enter a parse tree produced by the {@code TotalFunctionType}
+	 * labeled alternative in {@link VDMParser#function_type}.
 	 * @param ctx the parse tree
 	 */
-	void enterPartial_function_type(VDMParser.Partial_function_typeContext ctx);
+	void enterTotalFunctionType(VDMParser.TotalFunctionTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#partial_function_type}.
+	 * Exit a parse tree produced by the {@code TotalFunctionType}
+	 * labeled alternative in {@link VDMParser#function_type}.
 	 * @param ctx the parse tree
 	 */
-	void exitPartial_function_type(VDMParser.Partial_function_typeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link VDMParser#total_function_type}.
-	 * @param ctx the parse tree
-	 */
-	void enterTotal_function_type(VDMParser.Total_function_typeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link VDMParser#total_function_type}.
-	 * @param ctx the parse tree
-	 */
-	void exitTotal_function_type(VDMParser.Total_function_typeContext ctx);
+	void exitTotalFunctionType(VDMParser.TotalFunctionTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code VoidType}
 	 * labeled alternative in {@link VDMParser#discretionary_type}.
@@ -841,17 +974,17 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitVoidType(VDMParser.VoidTypeContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code FunctionType}
+	 * Enter a parse tree produced by the {@code FunctionParametersType}
 	 * labeled alternative in {@link VDMParser#discretionary_type}.
 	 * @param ctx the parse tree
 	 */
-	void enterFunctionType(VDMParser.FunctionTypeContext ctx);
+	void enterFunctionParametersType(VDMParser.FunctionParametersTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code FunctionType}
+	 * Exit a parse tree produced by the {@code FunctionParametersType}
 	 * labeled alternative in {@link VDMParser#discretionary_type}.
 	 * @param ctx the parse tree
 	 */
-	void exitFunctionType(VDMParser.FunctionTypeContext ctx);
+	void exitFunctionParametersType(VDMParser.FunctionParametersTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#type_name}.
 	 * @param ctx the parse tree
@@ -873,15 +1006,15 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitType_variable(VDMParser.Type_variableContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#invariant}.
+	 * Enter a parse tree produced by {@link VDMParser#type_invariant}.
 	 * @param ctx the parse tree
 	 */
-	void enterInvariant(VDMParser.InvariantContext ctx);
+	void enterType_invariant(VDMParser.Type_invariantContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#invariant}.
+	 * Exit a parse tree produced by {@link VDMParser#type_invariant}.
 	 * @param ctx the parse tree
 	 */
-	void exitInvariant(VDMParser.InvariantContext ctx);
+	void exitType_invariant(VDMParser.Type_invariantContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#eq_clause}.
 	 * @param ctx the parse tree
@@ -902,16 +1035,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitOrd_clause(VDMParser.Ord_clauseContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link VDMParser#invariant_initial_function}.
-	 * @param ctx the parse tree
-	 */
-	void enterInvariant_initial_function(VDMParser.Invariant_initial_functionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link VDMParser#invariant_initial_function}.
-	 * @param ctx the parse tree
-	 */
-	void exitInvariant_initial_function(VDMParser.Invariant_initial_functionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#state_definition}.
 	 * @param ctx the parse tree
@@ -1363,15 +1486,15 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitAccess_assignment_definition(VDMParser.Access_assignment_definitionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link VDMParser#invariant_definition}.
+	 * Enter a parse tree produced by {@link VDMParser#instance_variable_invariant_definition}.
 	 * @param ctx the parse tree
 	 */
-	void enterInvariant_definition(VDMParser.Invariant_definitionContext ctx);
+	void enterInstance_variable_invariant_definition(VDMParser.Instance_variable_invariant_definitionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link VDMParser#invariant_definition}.
+	 * Exit a parse tree produced by {@link VDMParser#instance_variable_invariant_definition}.
 	 * @param ctx the parse tree
 	 */
-	void exitInvariant_definition(VDMParser.Invariant_definitionContext ctx);
+	void exitInstance_variable_invariant_definition(VDMParser.Instance_variable_invariant_definitionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#synchronization_definitions}.
 	 * @param ctx the parse tree
@@ -1645,18 +1768,6 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitSetPSubsetExpr(VDMParser.SetPSubsetExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code IfExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterIfExpr(VDMParser.IfExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code IfExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitIfExpr(VDMParser.IfExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code MapEnumExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1669,17 +1780,17 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitMapEnumExpr(VDMParser.MapEnumExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code MapDomRestricExpr}
+	 * Enter a parse tree produced by the {@code AbsoluteExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterMapDomRestricExpr(VDMParser.MapDomRestricExprContext ctx);
+	void enterAbsoluteExpr(VDMParser.AbsoluteExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code MapDomRestricExpr}
+	 * Exit a parse tree produced by the {@code AbsoluteExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitMapDomRestricExpr(VDMParser.MapDomRestricExprContext ctx);
+	void exitAbsoluteExpr(VDMParser.AbsoluteExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code SetRangeExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1729,6 +1840,486 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitBracketedExpr(VDMParser.BracketedExprContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code SubSeqExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSubSeqExpr(VDMParser.SubSeqExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SubSeqExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSubSeqExpr(VDMParser.SubSeqExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqHdExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqHdExpr(VDMParser.SeqHdExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqHdExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqHdExpr(VDMParser.SeqHdExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TupleSelExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterTupleSelExpr(VDMParser.TupleSelExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TupleSelExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitTupleSelExpr(VDMParser.TupleSelExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code NarrowExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterNarrowExpr(VDMParser.NarrowExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code NarrowExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitNarrowExpr(VDMParser.NarrowExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code CardinalityExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterCardinalityExpr(VDMParser.CardinalityExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code CardinalityExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitCardinalityExpr(VDMParser.CardinalityExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RelationalLessThanEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RelationalLessThanEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArithmeticPlusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArithmeticPlusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RelationalEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RelationalEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code MapRngFilterExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code MapRngFilterExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code MapOverrideExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMapOverrideExpr(VDMParser.MapOverrideExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code MapOverrideExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMapOverrideExpr(VDMParser.MapOverrideExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqReverseExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqReverseExpr(VDMParser.SeqReverseExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqReverseExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqReverseExpr(VDMParser.SeqReverseExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code MapUnionExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMapUnionExpr(VDMParser.MapUnionExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code MapUnionExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMapUnionExpr(VDMParser.MapUnionExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArithmeticMinusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArithmeticMinusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArithmeticMultiplicationExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArithmeticMultiplicationExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SetCompExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetCompExpr(VDMParser.SetCompExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SetCompExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetCompExpr(VDMParser.SetCompExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RTTimeExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRTTimeExpr(VDMParser.RTTimeExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RTTimeExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRTTimeExpr(VDMParser.RTTimeExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code VariableExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariableExpr(VDMParser.VariableExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code VariableExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariableExpr(VDMParser.VariableExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code MapDomExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMapDomExpr(VDMParser.MapDomExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code MapDomExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMapDomExpr(VDMParser.MapDomExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code QuantifiedExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterQuantifiedExpr(VDMParser.QuantifiedExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code QuantifiedExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitQuantifiedExpr(VDMParser.QuantifiedExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code DefExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterDefExpr(VDMParser.DefExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DefExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitDefExpr(VDMParser.DefExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RelationalNotEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RelationalNotEqualExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code PowerSetExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPowerSetExpr(VDMParser.PowerSetExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code PowerSetExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPowerSetExpr(VDMParser.PowerSetExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code LogicalAndExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicalAndExpr(VDMParser.LogicalAndExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code LogicalAndExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicalAndExpr(VDMParser.LogicalAndExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqEnumExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqEnumExpr(VDMParser.SeqEnumExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqEnumExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqEnumExpr(VDMParser.SeqEnumExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RTReqExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRTReqExpr(VDMParser.RTReqExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RTReqExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRTReqExpr(VDMParser.RTReqExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RecordMkExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRecordMkExpr(VDMParser.RecordMkExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RecordMkExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRecordMkExpr(VDMParser.RecordMkExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FloorExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterFloorExpr(VDMParser.FloorExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FloorExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitFloorExpr(VDMParser.FloorExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code NotExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterNotExpr(VDMParser.NotExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code NotExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitNotExpr(VDMParser.NotExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqCompExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqCompExpr(VDMParser.SeqCompExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqCompExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqCompExpr(VDMParser.SeqCompExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code PPSameBaseClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code PPSameBaseClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RTActiveExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRTActiveExpr(VDMParser.RTActiveExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RTActiveExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRTActiveExpr(VDMParser.RTActiveExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SetEnumExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetEnumExpr(VDMParser.SetEnumExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SetEnumExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetEnumExpr(VDMParser.SetEnumExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SetDinterExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetDinterExpr(VDMParser.SetDinterExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SetDinterExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetDinterExpr(VDMParser.SetDinterExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code PPIsOfClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code PPIsOfClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FieldSelExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterFieldSelExpr(VDMParser.FieldSelExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FieldSelExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitFieldSelExpr(VDMParser.FieldSelExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqIndsExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqIndsExpr(VDMParser.SeqIndsExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqIndsExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqIndsExpr(VDMParser.SeqIndsExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code PPSameClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPPSameClassExpr(VDMParser.PPSameClassExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code PPSameClassExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPPSameClassExpr(VDMParser.PPSameClassExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code PPNewExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPPNewExpr(VDMParser.PPNewExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code PPNewExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPPNewExpr(VDMParser.PPNewExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SeqLenExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeqLenExpr(VDMParser.SeqLenExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SeqLenExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeqLenExpr(VDMParser.SeqLenExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code IfExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterIfExpr(VDMParser.IfExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code IfExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitIfExpr(VDMParser.IfExprContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code LetBestExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1764,18 +2355,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitOldNameExpr(VDMParser.OldNameExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SubSeqExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSubSeqExpr(VDMParser.SubSeqExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SubSeqExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSubSeqExpr(VDMParser.SubSeqExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ArithmeticIntegerDivisionExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1837,17 +2416,29 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitPreconditionExpr(VDMParser.PreconditionExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code TupleSelExpr}
+	 * Enter a parse tree produced by the {@code SeqElemsExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterTupleSelExpr(VDMParser.TupleSelExprContext ctx);
+	void enterSeqElemsExpr(VDMParser.SeqElemsExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code TupleSelExpr}
+	 * Exit a parse tree produced by the {@code SeqElemsExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitTupleSelExpr(VDMParser.TupleSelExprContext ctx);
+	void exitSeqElemsExpr(VDMParser.SeqElemsExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SetDunionExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetDunionExpr(VDMParser.SetDunionExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SetDunionExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetDunionExpr(VDMParser.SetDunionExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code RelationalGreaterThanExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1861,18 +2452,6 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitRelationalGreaterThanExpr(VDMParser.RelationalGreaterThanExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code NarrowExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterNarrowExpr(VDMParser.NarrowExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code NarrowExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitNarrowExpr(VDMParser.NarrowExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code RelationalLessThanExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -1884,30 +2463,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitRelationalLessThanExpr(VDMParser.RelationalLessThanExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code RelationalLessThanEqualExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code RelationalLessThanEqualExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitRelationalLessThanEqualExpr(VDMParser.RelationalLessThanEqualExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code ArithmeticPlusExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ArithmeticPlusExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitArithmeticPlusExpr(VDMParser.ArithmeticPlusExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code LetExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1933,41 +2488,17 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitLambdaExpr(VDMParser.LambdaExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code RelationalEqualExpr}
+	 * Enter a parse tree produced by the {@code MapRngExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx);
+	void enterMapRngExpr(VDMParser.MapRngExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code RelationalEqualExpr}
+	 * Exit a parse tree produced by the {@code MapRngExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitRelationalEqualExpr(VDMParser.RelationalEqualExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code MapRngFilterExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code MapRngFilterExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMapRngFilterExpr(VDMParser.MapRngFilterExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code UnaryExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryExpr(VDMParser.UnaryExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code UnaryExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryExpr(VDMParser.UnaryExprContext ctx);
+	void exitMapRngExpr(VDMParser.MapRngExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code TupleMkExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -1980,18 +2511,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTupleMkExpr(VDMParser.TupleMkExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code MapUnionExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMapUnionExpr(VDMParser.MapUnionExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code MapUnionExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMapUnionExpr(VDMParser.MapUnionExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ArithmeticReminderExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2017,42 +2536,6 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitRTActExpr(VDMParser.RTActExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code ArithmeticMinusExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ArithmeticMinusExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitArithmeticMinusExpr(VDMParser.ArithmeticMinusExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code ArithmeticMultiplicationExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ArithmeticMultiplicationExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitArithmeticMultiplicationExpr(VDMParser.ArithmeticMultiplicationExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SetCompExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetCompExpr(VDMParser.SetCompExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SetCompExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetCompExpr(VDMParser.SetCompExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code PPSelfExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -2076,18 +2559,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitGeneralIsExpr(VDMParser.GeneralIsExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code RTTimeExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterRTTimeExpr(VDMParser.RTTimeExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code RTTimeExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitRTTimeExpr(VDMParser.RTTimeExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ArithmeticDivideExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2137,65 +2608,41 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitSetInterExpr(VDMParser.SetInterExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code QuantifiedExpr}
+	 * Enter a parse tree produced by the {@code SeqTlExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterQuantifiedExpr(VDMParser.QuantifiedExprContext ctx);
+	void enterSeqTlExpr(VDMParser.SeqTlExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code QuantifiedExpr}
+	 * Exit a parse tree produced by the {@code SeqTlExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitQuantifiedExpr(VDMParser.QuantifiedExprContext ctx);
+	void exitSeqTlExpr(VDMParser.SeqTlExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code DefExpr}
+	 * Enter a parse tree produced by the {@code MapDomRestrictExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterDefExpr(VDMParser.DefExprContext ctx);
+	void enterMapDomRestrictExpr(VDMParser.MapDomRestrictExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code DefExpr}
+	 * Exit a parse tree produced by the {@code MapDomRestrictExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitDefExpr(VDMParser.DefExprContext ctx);
+	void exitMapDomRestrictExpr(VDMParser.MapDomRestrictExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code MapSeqOverrideExpr}
+	 * Enter a parse tree produced by the {@code MapInverseExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterMapSeqOverrideExpr(VDMParser.MapSeqOverrideExprContext ctx);
+	void enterMapInverseExpr(VDMParser.MapInverseExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code MapSeqOverrideExpr}
+	 * Exit a parse tree produced by the {@code MapInverseExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitMapSeqOverrideExpr(VDMParser.MapSeqOverrideExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code RelationalNotEqualExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code RelationalNotEqualExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitRelationalNotEqualExpr(VDMParser.RelationalNotEqualExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code NameExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterNameExpr(VDMParser.NameExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code NameExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitNameExpr(VDMParser.NameExprContext ctx);
+	void exitMapInverseExpr(VDMParser.MapInverseExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code IterateExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2209,18 +2656,6 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitIterateExpr(VDMParser.IterateExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code LogicalAndExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterLogicalAndExpr(VDMParser.LogicalAndExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code LogicalAndExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitLogicalAndExpr(VDMParser.LogicalAndExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code CasesExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -2232,30 +2667,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCasesExpr(VDMParser.CasesExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqEnumExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqEnumExpr(VDMParser.SeqEnumExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqEnumExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqEnumExpr(VDMParser.SeqEnumExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code ApplyExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterApplyExpr(VDMParser.ApplyExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ApplyExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitApplyExpr(VDMParser.ApplyExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code SetDiffExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2269,29 +2680,29 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitSetDiffExpr(VDMParser.SetDiffExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code RTReqExpr}
+	 * Enter a parse tree produced by the {@code ApplyExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterRTReqExpr(VDMParser.RTReqExprContext ctx);
+	void enterApplyExpr(VDMParser.ApplyExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code RTReqExpr}
+	 * Exit a parse tree produced by the {@code ApplyExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitRTReqExpr(VDMParser.RTReqExprContext ctx);
+	void exitApplyExpr(VDMParser.ApplyExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code RecordMkExpr}
+	 * Enter a parse tree produced by the {@code SeqDistConcExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterRecordMkExpr(VDMParser.RecordMkExprContext ctx);
+	void enterSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code RecordMkExpr}
+	 * Exit a parse tree produced by the {@code SeqDistConcExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitRecordMkExpr(VDMParser.RecordMkExprContext ctx);
+	void exitSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code SetSubsetExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2328,18 +2739,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitRTFinExpr(VDMParser.RTFinExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqCompExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqCompExpr(VDMParser.SeqCompExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqCompExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqCompExpr(VDMParser.SeqCompExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code SymbolicLitExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2401,18 +2800,6 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitPPThreadIdExpr(VDMParser.PPThreadIdExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code PPSameBaseClassExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code PPSameBaseClassExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitPPSameBaseClassExpr(VDMParser.PPSameBaseClassExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code MapDomFilterExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -2436,18 +2823,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitUndefinedExpr(VDMParser.UndefinedExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code RTActiveExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterRTActiveExpr(VDMParser.RTActiveExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code RTActiveExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitRTActiveExpr(VDMParser.RTActiveExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code RecordMuExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2473,17 +2848,17 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitArithmeticModuloExpr(VDMParser.ArithmeticModuloExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code SetEnumExpr}
+	 * Enter a parse tree produced by the {@code MapMergeExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterSetEnumExpr(VDMParser.SetEnumExprContext ctx);
+	void enterMapMergeExpr(VDMParser.MapMergeExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code SetEnumExpr}
+	 * Exit a parse tree produced by the {@code MapMergeExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitSetEnumExpr(VDMParser.SetEnumExprContext ctx);
+	void exitMapMergeExpr(VDMParser.MapMergeExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code LogicalOrExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2497,30 +2872,6 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitLogicalOrExpr(VDMParser.LogicalOrExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code PPIsOfClassExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code PPIsOfClassExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitPPIsOfClassExpr(VDMParser.PPIsOfClassExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code FieldSelExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterFieldSelExpr(VDMParser.FieldSelExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code FieldSelExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitFieldSelExpr(VDMParser.FieldSelExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code SeqConcatExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
@@ -2533,29 +2884,17 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitSeqConcatExpr(VDMParser.SeqConcatExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code PPSameClassExpr}
+	 * Enter a parse tree produced by the {@code UnaryPlusExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterPPSameClassExpr(VDMParser.PPSameClassExprContext ctx);
+	void enterUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code PPSameClassExpr}
+	 * Exit a parse tree produced by the {@code UnaryPlusExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitPPSameClassExpr(VDMParser.PPSameClassExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code PPNewExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterPPNewExpr(VDMParser.PPNewExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code PPNewExpr}
-	 * labeled alternative in {@link VDMParser#expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitPPNewExpr(VDMParser.PPNewExprContext ctx);
+	void exitUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code PPIsOfBaseClassExpr}
 	 * labeled alternative in {@link VDMParser#expression}.
@@ -2568,6 +2907,28 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPPIsOfBaseClassExpr(VDMParser.PPIsOfBaseClassExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code UnaryMinusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code UnaryMinusExpr}
+	 * labeled alternative in {@link VDMParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link VDMParser#variable}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariable(VDMParser.VariableContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link VDMParser#variable}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariable(VDMParser.VariableContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#bracketed_expression}.
 	 * @param ctx the parse tree
@@ -2668,246 +3029,6 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitOthers_expression(VDMParser.Others_expressionContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code UnaryPlusExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code UnaryPlusExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryPlusExpr(VDMParser.UnaryPlusExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code UnaryMinusExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code UnaryMinusExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryMinusExpr(VDMParser.UnaryMinusExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code AbsoluteExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterAbsoluteExpr(VDMParser.AbsoluteExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code AbsoluteExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitAbsoluteExpr(VDMParser.AbsoluteExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code FloorExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterFloorExpr(VDMParser.FloorExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code FloorExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitFloorExpr(VDMParser.FloorExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code NotExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterNotExpr(VDMParser.NotExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code NotExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitNotExpr(VDMParser.NotExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code CardinalityExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterCardinalityExpr(VDMParser.CardinalityExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code CardinalityExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitCardinalityExpr(VDMParser.CardinalityExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code PowerSetExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterPowerSetExpr(VDMParser.PowerSetExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code PowerSetExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitPowerSetExpr(VDMParser.PowerSetExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SetDunionExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetDunionExpr(VDMParser.SetDunionExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SetDunionExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetDunionExpr(VDMParser.SetDunionExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SetDinterExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetDinterExpr(VDMParser.SetDinterExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SetDinterExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetDinterExpr(VDMParser.SetDinterExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqHdExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqHdExpr(VDMParser.SeqHdExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqHdExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqHdExpr(VDMParser.SeqHdExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqTlExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqTlExpr(VDMParser.SeqTlExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqTlExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqTlExpr(VDMParser.SeqTlExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqLenExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqLenExpr(VDMParser.SeqLenExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqLenExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqLenExpr(VDMParser.SeqLenExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqElemsExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqElemsExpr(VDMParser.SeqElemsExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqElemsExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqElemsExpr(VDMParser.SeqElemsExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqIndsExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqIndsExpr(VDMParser.SeqIndsExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqIndsExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqIndsExpr(VDMParser.SeqIndsExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqReverseExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqReverseExpr(VDMParser.SeqReverseExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqReverseExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqReverseExpr(VDMParser.SeqReverseExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code SeqDistConcExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code SeqDistConcExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitSeqDistConcExpr(VDMParser.SeqDistConcExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code MapDomExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMapDomExpr(VDMParser.MapDomExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code MapDomExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMapDomExpr(VDMParser.MapDomExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code MapRngExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMapRngExpr(VDMParser.MapRngExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code MapRngExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMapRngExpr(VDMParser.MapRngExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code MapMergeExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMapMergeExpr(VDMParser.MapMergeExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code MapMergeExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMapMergeExpr(VDMParser.MapMergeExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code MapInverseExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMapInverseExpr(VDMParser.MapInverseExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code MapInverseExpr}
-	 * labeled alternative in {@link VDMParser#unary_expression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMapInverseExpr(VDMParser.MapInverseExprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#quantified_expression}.
 	 * @param ctx the parse tree
@@ -3029,6 +3150,16 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitMap_enumeration(VDMParser.Map_enumerationContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link VDMParser#maplet_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterMaplet_list(VDMParser.Maplet_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link VDMParser#maplet_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitMaplet_list(VDMParser.Maplet_listContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link VDMParser#maplet}.
 	 * @param ctx the parse tree
 	 */
@@ -3089,6 +3220,16 @@ public interface VDMListener extends ParseTreeListener {
 	 */
 	void exitRecord_modifier(VDMParser.Record_modifierContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link VDMParser#record_modification_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterRecord_modification_list(VDMParser.Record_modification_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link VDMParser#record_modification_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitRecord_modification_list(VDMParser.Record_modification_listContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link VDMParser#record_modification}.
 	 * @param ctx the parse tree
 	 */
@@ -3138,6 +3279,16 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFunction_type_instantiation(VDMParser.Function_type_instantiationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link VDMParser#type_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterType_list(VDMParser.Type_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link VDMParser#type_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitType_list(VDMParser.Type_listContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link VDMParser#lambda_expression}.
 	 * @param ctx the parse tree
@@ -4238,6 +4389,16 @@ public interface VDMListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitIdName(VDMParser.IdNameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link VDMParser#old_name}.
+	 * @param ctx the parse tree
+	 */
+	void enterOld_name(VDMParser.Old_nameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link VDMParser#old_name}.
+	 * @param ctx the parse tree
+	 */
+	void exitOld_name(VDMParser.Old_nameContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code NumericLiteral}
 	 * labeled alternative in {@link VDMParser#symbolic_literal}.
