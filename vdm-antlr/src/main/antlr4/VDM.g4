@@ -82,7 +82,6 @@ import VDMLex;
     
     protected boolean isTLDTypeName() 
     { 
-        System.out.println("Testing " + getCurrentToken().getText() + " ; " + tldTypeNames.toString());
         return tldTypeNames.contains(getCurrentToken().getText()); 
     } 
 
@@ -560,7 +559,7 @@ value_definition
 //------------------------
 
 sl_function_definitions 
-    : SLK_functions function_definition 
+    : SLK_functions function_definition (SEP_scolon function_definition)* SEP_scolon?
     ;
 
 pp_function_definitions 
@@ -622,7 +621,7 @@ type_variable_list
     ;
 
 parameter_types 
-    : PAREN_L pattern_type_pair_list PAREN_R
+    : PAREN_L pattern_type_pair_list* PAREN_R
     ;
 
 pattern_type_pair_list
@@ -661,7 +660,7 @@ measure_body
 //------------------------
 
 sl_operation_definitions 
-    : SLK_operations sl_access_operation_definition
+    : SLK_operations sl_access_operation_definition (SEP_scolon sl_access_operation_definition)* SEP_scolon?
     ;
 
 sl_access_operation_definition
@@ -1106,7 +1105,7 @@ expression
 //------------------------
 
 variable 
-    : {!isTLDTypeName()}? name
+    : name
     ;
 
 //@LRM bracketed_expression could be reused within pattern and expression?  
