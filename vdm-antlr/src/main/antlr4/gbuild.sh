@@ -7,8 +7,7 @@ rm -R ./.antlr/output
 mkdir ~/.local/lib/
 curl https://www.antlr.org/download/antlr-4.11.1-complete.jar -o ~/.local/lib/antlr-4.11.1-complete.jar
 ANTLR4=~/.local/lib/antlr-4.11.1-complete.jar
-VDMJ=~/.m2/repository/dk/au/ece/vdmj/vdmj/4.5.0-SNAPSHOT/vdmj-4.5.0-SNAPSHOT.jar
-CP="$ANTLR4:$VDMJ:$CLASSPATH"
+CP="$ANTLR4:$CLASSPATH"
 
 GRAMMARS='VDM.g4 VDMLex.g4' #Test.g4 
 
